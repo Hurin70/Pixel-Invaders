@@ -387,6 +387,3 @@ async def main():
             
             # --- ESPERAR PARA LA WEB ---
             await asyncio.sleep(0) 
-
-if __name__ == "__main__":
-    asyncio.run(main())
