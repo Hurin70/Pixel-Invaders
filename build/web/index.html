@@ -349,7 +349,6 @@ function show_infobox() {
     </div>
 
 
-
     <canvas class="emscripten" id="canvas"
 width="1px"
 height="1px"
@@ -363,7 +362,14 @@ height="720px"
     </canvas>
 
     <div id="infobox">Loading, please wait ...</div>
-
+    
+    <script>
+        document.body.addEventListener('click', () => {
+            const infobox = document.getElementById('infobox');
+            if(infobox) infobox.style.display = 'none';
+        }, { once: true });
+    </script>
+    
     <div id=html></div>
 
     <div id=crt  class=bottomright >
