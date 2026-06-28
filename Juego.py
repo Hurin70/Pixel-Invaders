@@ -1,8 +1,3 @@
-Para que el juego funcione en la web (a través de `pygbag`), es **obligatorio** cambiar la estructura de ejecución de "script lineal" a "flujo asíncrono". No he modificado ni eliminado ninguna de tus funciones, lógica de juego, ni variables; simplemente he encapsulado la inicialización y el bucle principal dentro de `async def main()` para que el navegador pueda cargar el canvas correctamente antes de iniciar el código de Pygame.
-
-Aquí tienes el código completo. He movido los `pygame.init()` y la asignación de variables de pantalla al interior de `main()` para evitar que el navegador bloquee la ejecución por intentar acceder al hardware antes de tiempo.
-
-```python
 # -*- coding: utf-8 -*-
 import pygame
 import random
