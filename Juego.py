@@ -1025,7 +1025,7 @@ while True:
             # Comprobar colisiones con enemigos
             for enemigo in enemigos:
                 if bala.rect.colliderect(enemigo.rect):
-                    # --- MODIFICADOR POR AURA DE FUEGO ---
+                    # --- MODIFICADOR POR AURA DE FUEGO --- OBSOLETO ---
                     if isinstance(enemigo, NaveNaranja):
                         enemigo.otorgar_modificador(nave, modificadores_activos, burbuja_escudo_img)
                         if modificadores_activos:
